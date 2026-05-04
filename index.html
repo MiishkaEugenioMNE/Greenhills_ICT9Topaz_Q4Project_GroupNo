@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q4 Project</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+
+    <style>
+        .login-box {
+            width: 400px;
+        }
+
+        input.form-control {
+            background: transparent !important;
+            border: 1px solid #0E1428 !important;
+            box-shadow: none !important;
+        }
+
+        input.form-control:focus {
+            border-color: #0E1428 !important;
+            box-shadow: 0 0 0 0.15rem rgba(14, 20, 40, 0.25) !important;
+        }
+
+        .btn-dark {
+            background-color: #0E1428 !important;
+            border: none !important;
+        }
+
+        .btn-dark:hover {
+            background-color: #0E1428 !important;
+            opacity: 0.85;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .login-box {
+            border-radius: 20px;
+            width: 350px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .login-box h6 {
+            color: #000000;
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            margin-bottom: -8px;
+            z-index: 1;
+        }
+
+        .login-box input.form-control {
+            border-radius: 20px;
+            border: none;
+            background: #ddd;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        .login-box input.form-control:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #999;
+            background: #ddd;
+        }
+
+        .login-box .btn {
+            border-radius: 20px;
+            background: #777;
+            border: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .login-box .btn:hover {
+            background: #555;
+        }
+
+        .login-box a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #555;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+
+        .login-box form {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- loginform -->
+    <p class="text-center display-1" style="text-shadow: 2px 2px 4px #484848; margin-top: 50px;">
+        Login Form
+    </p>
+
+    <div class="text-center">
+        <details ontoggle="console.log('Toggled!')">
+            <summary>More Info</summary>
+            <p>Username: Miishka Eugenio</p>
+            <p>Password: 121610</p>
+        </details>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="login-box p-4 shadow text-center">
+
+            <form class="d-flex flex-column align-items-center gap-3">
+
+                <h6>Username:</h6>
+                <input type="text" id="Username" placeholder="Enter Username here" class="form-control">
+
+                <h6>Password:</h6>
+                <input type="password" id="Password" placeholder="Enter Password here" class="form-control">
+
+                <input type="button" onclick="Login()" value="Login" class="btn btn-dark px-4">
+
+                <a href="https://support.google.com/accounts/answer/7682439?hl=en" style="color: black;">
+                    Forgot Password?
+                </a>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div id="output" class="text-center fs-1 mt-4"></div>
+
+    <!-- footer -->
+    <div class="footer p-2 mt-5">
+        Eugenio-Eusebio-Suson | 9 & Topaz ©2026 |
+        Source:
+        <a href="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec" target="_blank">
+            Unsplash
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="project.js"></script>
+
+</body>
+</html>

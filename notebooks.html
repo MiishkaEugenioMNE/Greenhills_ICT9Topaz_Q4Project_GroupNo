@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="project.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<title>Q4 Project</title>
+
+    <style>
+    .wrap {
+        display: flex;
+        align-items: center;
+        gap: 110px;
+    }
+
+    .container1, .container3 {
+        background-color: #0E1428;
+        border-radius: 20px;
+        width: 100px;
+    }
+
+    h1 {
+        padding: 20px;
+        text-align: center;
+    }
+
+    dt {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    dd {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    img {
+        border-radius: 20px;
+    }
+
+    .main-content {
+        margin-left: 220px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .box {
+        background-color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 20px;
+
+        width: 220px;
+        height: 300px;
+
+        padding: 15px;
+        margin: 10px;
+
+        box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+
+    .box img {
+        height: 100px;
+        object-fit: cover;
+        margin: 5px 0;
+    }
+
+    .box div {
+        flex-grow: 1;
+    }
+
+    .button {
+        background-color: #0E1428;
+        border-radius: 20px;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+        margin-top: auto;
+    }
+
+    .button2:hover {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    }
+
+    .footer {
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        margin-left: 105px;
+    }
+    .box:hover {
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    </style>
+</head>
+
+<body>
+
+<div class="sidenav">
+    <a href="profile.html" class="navbar-brand">
+        <img src="LOGO__1_-removebg-preview.png" alt="Logo" height="100" style="margin-right: 100px;">
+    </a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="notebooks.html">Virtual Notebook</a>
+    <a href="tasks.html">Tasks</a>
+    <a href="profile.html">Profile</a>
+    <a href="index.html" onclick="logout()" class="nav-link">Logout</a>
+</div>
+
+<div class="main">
+    <p class="display-1" style="text-shadow: 2px 2px 4px #484848;">Notebooks</p>
+    <p style="margin-left: 30px;">Select a Notebook</p>
+</div>
+
+<div class="main-content">
+
+    <div class="box">
+        <b>Homeroom</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>CHARLES MICHAEL CASTAÑO</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>Filipino</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>KARYLLE OVAL</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>English</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>MA. CARIZZA ALFARO</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>Mathematics</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>ARJEAN BANTING</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>Science</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>CHARLES MICHAEL CASTAÑO</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>Social Studies</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>AKIHIRO MARUTANI</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>Values Education</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>MA. NEENA LIBRAMONTE</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>Music and Arts</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>RALPH JOSEPH DE GUZMAN</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>PE</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>MARK VINCENT GERVACIO</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>TLE</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>NANCY MILANTE</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>ICT</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>JOSUA RONNEL ORTIZ</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+    <div class="box">
+        <b>Leadership</b>
+        <img src="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop">
+        <div>9 - Topaz 2025-2026<br>JEANNE PAULINE DE LA PEÑA</div>
+        <button class="button button2">Check VN</button>
+    </div>
+
+</div>
+
+<div class="footer">
+    Eugenio-Eusebio-Suson | 9 & Topaz ©2026 | Source:
+    <a href="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec" target="_blank">Unsplash</a>
+</div>
+
+</body>
+</html> 

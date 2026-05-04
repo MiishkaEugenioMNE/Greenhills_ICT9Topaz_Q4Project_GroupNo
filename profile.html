@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="project.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+    <title>Q4 Project</title>
+
+    <style>
+        .login-box {
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            background: white;
+        }
+
+        .login-box h6 {
+            background: #0E1428;
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-size: 12px;
+            margin-bottom: -8px;
+        }
+
+        .login-box input.form-control {
+            border-radius: 20px;
+            border: 1px solid #0E1428;
+            background: transparent;
+            padding: 10px 15px;
+            text-align: center;
+            box-shadow: none;
+        }
+
+        .login-box input.form-control:focus {
+            outline: none;
+            border-color: #0E1428;
+            box-shadow: 0 0 0 0.15rem rgba(14, 20, 40, 0.25);
+        }
+        .login-box .btn {
+            border-radius: 20px;
+            background: #0E1428;
+            border: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .login-box .btn:hover {
+            background: #0E1428;
+            opacity: 0.85;
+        }
+
+        .login-box a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #0E1428;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Sidenav -->
+<div class="sidenav">
+    <a href="profile.html" class="navbar-brand">
+        <img src="LOGO__1_-removebg-preview.png" alt="Logo" height="100" style="margin-right: 100px;">
+    </a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="notebooks.html">Virtual Notebook</a>
+    <a href="tasks.html">Tasks</a>
+    <a href="profile.html">Profile</a>
+    <a href="index.html" onclick="logout()" class="nav-link">Logout</a>
+</div>
+
+<div class="main">
+
+    <p class="display-1" style="text-shadow: 2px 2px 4px #484848; margin-top: 0;">
+        Profile
+    </p>
+
+    <p style="margin-left: 30px;">Student Information</p>
+
+    <!-- profile -->
+    <div class="profile-container">
+
+        <div class="left-panel">
+            <h2>PROFILE</h2>
+
+            <div class="avatar-box" id="avatarBox">
+                <img id="avatarPreview" src="" alt="">
+            </div>
+
+            <input type="file" id="fileInput" accept="image/*">
+            <p>Click circle to upload</p>
+        </div>
+
+        <div class="right-panel">
+            <h3>Student Information</h3>
+
+            <div class="info-item">Contact Number: 09265194720</div>
+            <div class="info-item">Email Address: eugenio.mn@obmontessori.edu.ph</div>
+            <div class="info-item">Gender: Female</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- footer -->
+<div class="footer">
+    Eugenio-Eusebio-Suson | 9 & Topaz ©2026 | Source:
+    <a href="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec" target="_blank">Unsplash</a>
+</div>
+
+<script src="project.js"></script>
+
+</body>
+</html>

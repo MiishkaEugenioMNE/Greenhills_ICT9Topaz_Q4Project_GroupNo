@@ -1,0 +1,95 @@
+/*SideNav*/
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0e1428;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #7B9E89;
+  display: block;
+}
+.sidenav a:hover {
+  color: #3d4e44;
+}
+.main {
+  margin-left: 200px;
+  padding: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body {
+  background-image: url(Background.png);
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
+/* Profile*/
+.profile-container {
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.left-panel {
+    width: 35%;
+    background: #eef3f7;
+    text-align: center;
+    padding: 30px 20px;
+    }
+.left-panel h2 {
+    letter-spacing: 2px;
+}
+.avatar-box {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 20px auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+.avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+input[type="file"] {
+    display: none;
+}
+.right-panel {
+    width: 55%;
+    padding: 30px;
+}
+.right-panel h3 {
+    margin-bottom: 20px;
+}
+.info-item {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+.btn {
+    margin-top: 20px;
+    padding: 10px;
+    background: #00bcd4;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #0097a7;
+} 

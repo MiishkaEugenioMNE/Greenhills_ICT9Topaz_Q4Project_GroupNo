@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="project.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Q4 Project</title>
+
+    <style>
+        .wrap {
+            display: flex;
+            align-items: center;
+            gap: 110px;
+        }
+
+        .container1, .container3 {
+            border-radius: 20px;
+            width: 100px;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        dt {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        dd {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .main-content {
+            margin-left: 220px; 
+            padding: 20px;
+        }
+
+        .quarter-wrap {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .quarter-box {
+            background-color: rgba(255, 255, 255, 0.412);
+            border-radius: 20px;
+            padding: 40px;
+            width: 600px;      
+            margin: 30px auto;    
+            text-align: left;      
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .footer {
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            text-shadow: #0000008e;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- sidenav -->
+    <div class="sidenav">
+    <a href="profile.html" class="navbar-brand">
+        <img src="LOGO__1_-removebg-preview.png" alt="Logo" height="100" style="margin-right: 100px;">
+    </a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="notebooks.html">Virtual Notebook</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="profile.html">Profile</a>
+        <a href="index.html" onclick="logout()" class="nav-link">Logout</a>
+    </div>
+
+    <div class="main">
+    <p class="display-1" style="text-shadow: 2px 2px 4px #484848;">Dashboard</p>
+        <p style="margin-left: 30px;">Quarter Work Plan</p>
+    </div>
+<div class="main-content">
+
+    <!-- qtr boxes -->
+    <div class="quarter-box">
+
+        <dt>I. 1st Quarter</dt>
+        <dd>- Introduction to HTML</dd>
+        <dd>- Basic CSS Styling</dd>
+        <dd>- Quarter Project</dd>
+
+        <br>
+
+        <dt>II. 2nd Quarter</dt>
+        <dd>- Introduction to Bootstrap</dd>
+        <dd>- Bootstrap Forms</dd>
+        <dd>- Quarter Project</dd>
+
+        <br>
+
+        <dt>III. 3rd Quarter</dt>
+        <dd>- Introduction to JavaScript</dd>
+        <dd>- Javascript data types, operators, and variables</dd>
+        <dd>- Quarter Project</dd>
+
+        <br>
+
+        <dt>IV. 4th Quarter</dt>
+        <dd>- Conditional Statements</dd>
+        <dd>- Iteration Statements</dd>
+        <dd>- Quarter Project</dd>
+
+    </div>
+
+<!-- footer -->
+<div class="footer">
+    Eugenio-Eusebio-Suson | 9 & Topaz ©2026 | Source:
+    <a href="https://images.unsplash.com/photo-1605485090379-ca5c8501c9ec?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" target="_blank">
+        Unsplash
+    </a>
+</div>
+
+</body>
+</html>
